@@ -1,0 +1,102 @@
+<template>
+    <div class="MyTeam">
+    <div class="title">
+        <span class="icon">
+            <fa icon="dharmachakra" />  
+             <i class="fi fi-rr-user"></i>
+        </span>
+        <h2> Our Awesome Team</h2>
+    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mask">
+                    <div class="member-img">
+                        <img src="../assets/team1.png" />
+                        <div class="item">
+                            <div class="socialMedia">
+                            <fa icon="laptop" />
+                            <fa icon="brain" />
+                            <fa icon="calendar" />
+                            <fa icon="hashtag" />
+                            </div>
+                        </div>
+                    </div>
+                    <h4>Razan Smith</h4>
+                    <p>Yoga Teacher</p>
+                </div>
+                <div class="col-md-4 mask">
+                    <div class="member-img">
+                        <img src="../assets/team2.png" />
+                        <div class="item">
+                            <div class="socialMedia">
+                            <fa icon="laptop" />
+                            <fa icon="brain" />
+                            <fa icon="calendar" />
+                            <fa icon="hashtag" />
+                            </div>
+                        </div>
+                    </div>
+                    <h4>Razan Smith</h4>
+                    <p>Yoga Teacher</p>
+                </div> 
+                <div class="col-md-4 mask">
+                    <div class="member-img">
+                        <img src="../assets/team3.jpg" />
+                        <div class="item">
+                            <div class="socialMedia">
+                            <fa icon="laptop" />
+                            <fa icon="brain" />
+                            <fa icon="calendar" />
+                            <fa icon="hashtag" />
+                            </div>
+                        </div>
+                    </div>
+                    <h4>Razan Smith</h4>
+                    <p>Yoga Teacher</p>
+                </div>        
+            </div>
+        </div>
+    </div>
+</template>
+<style>
+.MyTeam{
+    padding-top: 80px;
+}
+.MyTeam .mask{}
+.MyTeam .mask .member-img{
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+.MyTeam .mask .member-img .item{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,.5);
+    transform: scaleX(0);
+    transition: all .5s ease-in-out;
+}
+.MyTeam .mask .member-img:hover .item{
+    transform: scaleX(1);
+}
+.MyTeam .mask .member-img .item:before{
+    display: none;
+}
+.MyTeam .mask .member-img:hover img{
+    transform: scale(1.1);
+    transition: all .4s ease-in-out;
+}
+.MyTeam .mask .member-img .item .socialMedia{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+}
+.MyTeam .mask .member-img .item .socialMedia svg{
+    padding-right: 15px;
+    font-size: 25px;
+}
+</style>
