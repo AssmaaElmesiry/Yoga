@@ -4,7 +4,10 @@
     <what-we-do />
     <aboutus />
     <Events />
+    <classSchedule />
     <MyTeam />
+    <OurPricing />
+    <testimonials />
 </template>
 <script>
 import carouseSection from "../components/carouseSection.vue";
@@ -12,7 +15,10 @@ import headerStyle from '../components/headerStyle.vue';
 import WhatWeDo from '../components/WhatWeDo.vue';
 import aboutus from '../components/aboutus.vue';
 import Events from '../components/Events.vue';
-import MyTeam from '../components/MyTeam.vue'
+import classSchedule from '../components/classSchedule.vue';
+import MyTeam from '../components/MyTeam.vue';
+import OurPricing from '../components/OurPricing.vue';
+import testimonials from '../components/testimonials.vue';
 export default {
     data() {
         return {
@@ -26,6 +32,9 @@ export default {
       aboutus,
       Events,
       MyTeam,
+      classSchedule,
+      OurPricing,
+      testimonials,
     }
 };
 </script>

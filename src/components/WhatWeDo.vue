@@ -15,7 +15,9 @@
                         <fa icon="bahai" />
                     </div>
                     <div class="logo">
-                        <img  :src="images" />
+                        <iframe :src="product.icon">
+                            {{ product.icon }}
+                        </iframe>
                     </div>
                     <h4 class="title">
                         {{ product.title }}
@@ -33,31 +35,36 @@
 export default {
     data() {
         return {
-            images: ['/src/assets/1.png'],
             products: [
                 {
                     title: 'Heal your emotions',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et. ',
+                    icon: ['/src/assets/1.svg'],
                 },
                 {
                     title: 'Body & Spirituality',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et. ',
+                    icon: '/src/assets/9.svg',
                 },
                 {
                     title: 'Refreshens your body',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et. ',
+                    icon: '/src/assets/3.svg',
                 },
                 {
                     title: 'Enjoy your life',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et. ',
+                    icon: '/src/assets/4.svg',
                 },
                 {
                     title: 'Balance Body & Mind',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et. ',
+                    icon: '/src/assets/5.svg',
                 },
                 {
                     title: 'Mind & Serenity',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et. ',
+                    icon: '/src/assets/8.svg',
                 },
             ]
         }
@@ -129,9 +136,17 @@ export default {
     .prodcts .mask .item .desc{
         color: #888
     }
-    .prodcts .mask .item .logo img{
-        width: 100%;
-        height: 100%;
+    .prodcts .mask .item .logo iframe{
+        width: 70px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .prodcts .mask .item .logo iframe svg#Capa_1{
+        width: 60px;
+        height: 60px;
+        fill: #fff !important;
     }
     .prodcts .mask .item:hover{
         background-color: #7b6cd5;
@@ -155,4 +170,5 @@ export default {
     .prodcts .mask .item:hover .bg-icon svg{
         color: #fff;
     }
+
 </style>

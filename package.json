@@ -17,6 +17,7 @@
         "k-progress-v3": "^1.0.0",
         "vue": "^3.2.25",
         "vue-router": "^4.0.13",
+        "vue-time-slot": "^0.0.1",
         "vue3-burger-menu": "^1.1.1",
         "vue3-carousel": "^0.1.36",
         "vuesax": "^4.0.1-alpha.25"

@@ -43,12 +43,9 @@
                     <div class="member-img">
                         <img src="../assets/team3.jpg" />
                         <div class="item">
-                            <div class="socialMedia">
-                            <fa icon="laptop" />
-                            <fa icon="brain" />
-                            <fa icon="calendar" />
-                            <fa icon="hashtag" />
-                            </div>
+                            <ul class="socialMedia">
+                                <li v-for="icon in icons"> {{ icon }} </li>
+                            </ul>
                         </div>
                     </div>
                     <h4>Razan Smith</h4>
@@ -58,11 +55,27 @@
         </div>
     </div>
 </template>
+<script>
+export default {
+    data() {
+        return {
+            icons:{
+                facebook: '/src/assets/social1.svg',
+                twitter: '/src/assets/social2.svg',
+                Gmail: '/src/assets/social3.svg',
+                Whatsapp: '/src/assets/social4.svg',
+            }
+        }
+    },
+}
+</script>
 <style>
 .MyTeam{
     padding-top: 80px;
 }
-.MyTeam .mask{}
+.MyTeam .mask p{
+    color: #7b6cd5;
+}
 .MyTeam .mask .member-img{
     border-radius: 8px;
     position: relative;
