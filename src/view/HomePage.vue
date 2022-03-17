@@ -8,6 +8,10 @@
     <MyTeam />
     <OurPricing />
     <testimonials />
+    <Events />
+    <contactUs />
+    <newsletter />
+    <footerstyle />
 </template>
 <script>
 import carouseSection from "../components/carouseSection.vue";
@@ -19,6 +23,10 @@ import classSchedule from '../components/classSchedule.vue';
 import MyTeam from '../components/MyTeam.vue';
 import OurPricing from '../components/OurPricing.vue';
 import testimonials from '../components/testimonials.vue';
+import contactUs from '../components/contactUs.vue';
+import newsletter from '../components/newsletter.vue';
+import footerstyle from '../components/footerstyle.vue';
+
 export default {
     data() {
         return {
@@ -35,6 +43,9 @@ export default {
       classSchedule,
       OurPricing,
       testimonials,
+      contactUs,
+      newsletter,
+      footerstyle,
     }
 };
 </script>

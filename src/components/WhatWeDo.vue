@@ -39,12 +39,12 @@ export default {
                 {
                     title: 'Heal your emotions',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et. ',
-                    icon: ['/src/assets/1.svg'],
+                    icon: ['/src/assets/9.svg'],
                 },
                 {
                     title: 'Body & Spirituality',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et. ',
-                    icon: '/src/assets/9.svg',
+                    icon: '/src/assets/7.svg',
                 },
                 {
                     title: 'Refreshens your body',
@@ -137,24 +137,19 @@ export default {
         color: #888
     }
     .prodcts .mask .item .logo iframe{
-        width: 70px;
-        height: 70px;
+        width: 45px;
+        height: 45px;
         display: flex;
         justify-content: center;
         align-content: center;
     }
-    .prodcts .mask .item .logo iframe svg#Capa_1{
-        width: 60px;
-        height: 60px;
-        fill: #fff !important;
-    }
     .prodcts .mask .item:hover{
         background-color: #7b6cd5;
-        color: #000;
+        color: #fff;
         transition: all .5s ease-in-out
     }
     .prodcts .mask .item:hover p {
-        color: #000;
+        color: #fff;
     }
     .prodcts .mask .item:hover .bg-icon{
         opacity: 1;

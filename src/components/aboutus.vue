@@ -32,7 +32,7 @@
               </div>
             </div>
             <div class="read">
-              <buttonStyle />
+              <button1 />
             </div>
           </div>
           <div class="image col-md-6">
@@ -47,7 +47,7 @@
   </div>
 </template>
 <script>
-import buttonStyle from './buttonStyle.vue'
+import button1 from '../components/buttonStyle/button1.vue'
 export default {
   data(){
       return {
@@ -58,7 +58,7 @@ export default {
       }
   },
   components: {
-    buttonStyle,
+    button1,
   }
 
 }
@@ -94,9 +94,6 @@ section .main p {
   font-size: 15px;
   line-height: 1.7;
   color: #888;
-}
-section .main .read .contact{
-  display: none
 }
 section .main .read a{
   margin: 0 !important;

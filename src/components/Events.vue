@@ -49,13 +49,13 @@
                         </div>
                     </section>
                 </div>
-                <buttonStyle />
+                <button1 />
             </div>
         </div>
     </div>
 </template>
 <script>
-import buttonStyle from './buttonStyle.vue'
+import button1 from '../components/buttonStyle/button1.vue'
 export default {
     data() {
         return {
@@ -64,14 +64,11 @@ export default {
         }
     },
     components: {
-        buttonStyle,
+        button1,
   }
 }
 </script>
 <style>
-.Events .contact{
-    display: none;
-}
 .Events .mask{
     display: flex;
     justify-content: center;

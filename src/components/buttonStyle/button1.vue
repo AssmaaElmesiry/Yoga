@@ -1,20 +1,18 @@
 <template>
     <div class="mask">
-        <a href="" class="more">{{button1}}</a>
-        <a href="" class="contact">{{button2}}</a>
+        <a href="" class="more">{{button}}</a>
     </div>
 </template>
 <script>
 export default {
     data(){
         return {
-           button1: 'Learn More',
-           button2: 'Contact Us',
+           button: 'Learn More',
         }
     }
 }
 </script>
-<style>
+<style scoped>
 .mask a {
  --color: #7b6cd5;
  font-family: inherit;
@@ -38,12 +36,7 @@ export default {
     border: 2px solid transparent;
     background-color: #7b6cd5;
 }
-.mask .contact{
-    border: 1px solid #fff;
-}
-.mask .contact:hover{
-    border: 1px solid #7b6cd5;
-}
+
 .mask a:before {
  content: "";
  position: absolute;

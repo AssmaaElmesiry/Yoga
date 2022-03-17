@@ -24,7 +24,7 @@
                         <ul class="pricing-feature">
                             <li v-for="item in items"> {{item}} </li>
                         </ul>
-                        <buttonStyle />
+                        <button2 />
                     </div>
                 </div>
                 <div class="col-md-4 mask">
@@ -45,7 +45,7 @@
                         <ul class="pricing-feature">
                             <li v-for="item in items"> {{item}} </li>
                         </ul>
-                        <buttonStyle />
+                        <button1 />
                     </div>
                 </div>
                 <div class="col-md-4 mask">
@@ -63,7 +63,7 @@
                         <ul class="pricing-feature">
                             <li v-for="item in items"> {{item}} </li>
                         </ul>
-                        <buttonStyle />
+                        <button2 />
                     </div>
                 </div>
             </div>
@@ -71,9 +71,13 @@
     </div>
 </template>
 <script>
-import buttonStyle from '../components/buttonStyle.vue'
+import button1 from '../components/buttonStyle/button1.vue'
+import button2 from '../components/buttonStyle/button2.vue'
 export default {
-    components: {buttonStyle,},
+    components: {
+        button1,
+        button2
+        },
     data() {
         return {
             items:['Starter Pack Included','Personal Trainer','Special Class','Free Tutorials','Group Training',]
@@ -85,22 +89,7 @@ export default {
 .OurPricing .mask .item .mask{
     padding: 0!important;
 }
-.OurPricing .mask .item .mask .more{
-    display: none;
-}
-.OurPricing .mask .item .mask .contact{
-    border: 1px solid #7b6cd5 !important;
-    color: #7b6cd5 !important;
-}
-.OurPricing .mask .item .mask .contact:hover{
-    color: #fff !important;
-}
-.OurPricing .mask .item.active .mask .contact{
-    display: none;
-}
-.OurPricing .mask .item.active .mask .more{
-    display: block;
-}
+
 .OurPricing .mask .item{
     display: flex;
     flex-direction: column;
@@ -127,9 +116,10 @@ export default {
     padding-top: 50px
 }
 .OurPricing .mask .item .pricing-head {
-    padding: 20px;
+    padding: 40px 0;
     position: relative;
     width: 100%;
+    font-weight: bold;
 }
 .OurPricing .mask .item.active .pricing-head {
     background: #7b6cd5;
@@ -166,11 +156,17 @@ export default {
     vertical-align: bottom;
 }
 .OurPricing .mask .item .pricing-feature {
-    padding-top: 15px
+    padding-top: 15px;
+    padding-left: 0 !important;
 }
 .OurPricing .mask .item .pricing-feature li{
     color: #888;
-    font-size: 20px;
+    font-size: 17px;
     padding-bottom: 15px;
+}
+.OurPricing .mask:hover{
+    transform: translateY(-7px);
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.05);
+    transition: all .4s ease-in-out;
 }
 </style>

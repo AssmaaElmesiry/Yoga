@@ -7,7 +7,10 @@
                 <h5>Welcome To Pranayama</h5>
                 <h2>Join Yoga Studio</h2>
                 <p>Yoga is the Art of Intelligent Movement.</p>
-                <buttonStyle />
+                <div>
+                  <button1 /><button2 />
+                </div>
+
             </div>
         </div>
     </Slide>
@@ -21,15 +24,16 @@
 <script>
 import { defineComponent } from 'vue';
 import 'vue3-carousel/dist/carousel.css';
-import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
-import buttonStyle from '../components/buttonStyle.vue'
+import { Carousel, Slide, Pagination} from 'vue3-carousel';
+import button1 from '../components/buttonStyle/button1.vue';
+import button2 from '../components/buttonStyle/button2.vue';
 export default {
     components: {
         Carousel,
         Slide,
         Pagination,
-        Navigation,
-        buttonStyle,
+        button1,
+        button2,
     },
   data() {
     return {
@@ -43,7 +47,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .carousel__viewport {
   overflow: hidden;
   height: 100vh;
@@ -80,6 +84,10 @@ img.imageSlider {
     position: absolute;
     color: #fff
 }
+.carousel__item .desc div {
+  display: flex;
+  justify-content: center;
+}
 .carousel__item .desc .mask{
     display: flex;
     justify-content: space-evenly;
@@ -94,10 +102,6 @@ img.imageSlider {
 }
 .carousel__item .desc p{
     font-size: 20px
-}
-.carousel__prev,
-.carousel__next {
-    display: none;
 }
 .carousel__pagination{
     display: none;
