@@ -135,7 +135,7 @@ export default {
 }
 .vue3-star-ratings__wrapper{
     display: flex !important;
-    justify-content: end !important;
+    justify-content: flex-end !important;
 }
 .vue3-star-ratings button{
     display: none !important;

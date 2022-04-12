@@ -18,11 +18,11 @@
                     <label>Subject</label>
                 </div>                       
                 <div class="user-box">
-                    <textarea type="text" name="Message" required id="Message" v-model="form.text"></textarea>
+                    <textarea type="text" name="Message" required id="Message" v-model="form.message"></textarea>
                     <label for="Message">Your Message</label>
                 </div>
                 <div class="Send">
-                    <button type="submit"  value="Submit">
+                    <button type="submit"  value="Submit" :disabled="!form.name || !form.email || !form.subject || !form.message">
                         <span>Send Now</span>
                     </button>
                 </div>
@@ -36,10 +36,11 @@
     data() {
       return {
         form: {
-          email: '',
-          name: '',
-          text: '',
-          subject: '',
+          email: null,
+          name: null,
+          message: null,
+          subject: null,
+
         },
         show: true
       }
@@ -123,6 +124,10 @@
     }
     form .Send{
         text-align: end;
+    }
+    form .Send button:disabled{
+        opacity: 0.4;
+        cursor: no-drop;
     }
     form .Send button{
         position: relative;

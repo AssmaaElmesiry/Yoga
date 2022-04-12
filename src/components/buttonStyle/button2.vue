@@ -1,6 +1,6 @@
 <template>
     <div class="mask">
-        <a href="" class="contact">{{button}}</a>
+        <button class="contact">{{button}}</button>
     </div>
 </template>
 <script>
@@ -13,7 +13,7 @@ export default {
 }
 </script>
 <style scoped>
-.mask a {
+.mask button {
  --color: #7b6cd5;
  font-family: inherit;
  display: flex;
@@ -30,15 +30,16 @@ export default {
  font-size: 17px;
  border-radius: 6px !important;
  font-weight: 500;
- color: #fff !important;
+ color: #7b6cd5 !important;
 }
 .mask .contact{
-    border: 1px solid #fff;
+    border: 1px solid #7b6cd5;
 }
 .mask .contact:hover{
     border: 1px solid #7b6cd5;
+    color: #fff !important;
 }
-.mask a:before {
+.mask button:before {
  content: "";
  position: absolute;
  z-index: -1;
@@ -49,17 +50,17 @@ export default {
  border: 1px solid #6754d9;
 }
 
-.mask a:before {
+.mask button:before {
  top: 100%;
  left: 100%;
  transition: all .7s;
 }
 
-.mask a:hover:before {
+.mask button:hover:before {
  top: -30px;
  left: -30px;
 }
-.mask a:active:before {
+.mask button:active:before {
  background: #7b6cd5;
  transition: background 0s;
 }

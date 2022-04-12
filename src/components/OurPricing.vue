@@ -80,21 +80,38 @@ export default {
         },
     data() {
         return {
-            items:['Starter Pack Included','Personal Trainer','Special Class','Free Tutorials','Group Training',]
+            items:['Starter Pack Included','Personal Trainer','Special Class','Free Tutorials','Group Training',],
         }
     },
 }
 </script>
 <style>
+
+.OurPricing{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.OurPricing .mask{
+    padding-top: 50px
+}
+.OurPricing .mask .item .pricing-head {
+    padding: 40px 0;
+    position: relative;
+    width: 100%;
+    font-weight: bold;
+    background-color: #fff;
+}
 .OurPricing .mask .item .mask{
     padding: 0!important;
 }
-
 .OurPricing .mask .item{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #f7f6f6;
+    border: 2px solid #eee;
+    padding: 20px;
 }
 .OurPricing .mask .item.active .pricing-head .bg-icon{
     display: flex;
@@ -108,18 +125,6 @@ export default {
 }
 .OurPricing .mask .item.active .pricing-head .bg-icon svg {
     color: #fff;
-}
-.OurPricing{
-    padding-top: 50px;
-}
-.OurPricing .mask{
-    padding-top: 50px
-}
-.OurPricing .mask .item .pricing-head {
-    padding: 40px 0;
-    position: relative;
-    width: 100%;
-    font-weight: bold;
 }
 .OurPricing .mask .item.active .pricing-head {
     background: #7b6cd5;
@@ -164,7 +169,7 @@ export default {
     font-size: 17px;
     padding-bottom: 15px;
 }
-.OurPricing .mask:hover{
+.OurPricing .mask .item:hover{
     transform: translateY(-7px);
     box-shadow: 0 0 20px 0 rgba(0,0,0,.05);
     transition: all .4s ease-in-out;

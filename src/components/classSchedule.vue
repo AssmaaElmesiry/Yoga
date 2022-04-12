@@ -36,7 +36,6 @@
           { "": '11.00',Monday: "Chandler Bing", Tuesday: 'Hatha Yoga', Wednesday: '', Thursday: 'Children Yoga',Friday: '', Saturday: 'Hatha Yoga', Sunday: 'Yoga Dance'},
           { "": '12.00', Monday: "", Tuesday: 'Body Balance', Wednesday: 'Pilates Yoga', Thursday: '',Friday: 'Children Yoga', Saturday: '', Sunday: 'Yoga Dance'},
         ],
-
       }
     },
     computed: {
@@ -56,11 +55,11 @@
 .Schedule{
    display: flex;
    padding-top: 50px;
-   justify-content: center;
+   padding-bottom: 50px;
+   overflow: auto;
 }
 table {
   font-family: 'Open Sans', sans-serif;
-  width: 750px;
   border-collapse: collapse;
   border: 2px solid #e5e5e5;
   margin: 10px 10px 0 10px;
@@ -85,5 +84,14 @@ table td {
 }
 table td:first-child {
   color: #888;
+}
+.TimeTable .group-list ul{
+  background-color: #7b6cd5;
+  padding: 15px
+
+}
+.TimeTable .group-list ul li{
+  display: flex;
+  justify-content: space-between;
 }
 </style>

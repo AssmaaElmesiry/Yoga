@@ -9,7 +9,7 @@
                     </div>
                     <div class="col-md-7 right">
                         <form>
-                            <input type="EMail" name="Email" id="Email" required>
+                            <input type="EMail" name="Email" id="Email" placeholder="Enter your email" required>
                             <button2 />
                         </form>
                     </div>
@@ -42,6 +42,7 @@ export default {
         display: flex;
         flex-direction: column;
         align-self: center;
+        text-align: left;
     }
     .newsletter .item .left h2 ,
     .newsletter .item .left p
@@ -68,5 +69,10 @@ export default {
     }
     .newsletter .item .right form input{
         width: 100%;
+        padding: 10px 0 10px 20px;
+        border-radius: 7px;
+        outline: none;
+        border: none;
+        font-weight: bold;
     }
 </style>

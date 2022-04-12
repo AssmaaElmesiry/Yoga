@@ -2,7 +2,9 @@
   <Carousel :autoplay="2000" :wrap-around="true">
     <Slide v-for="slide in imgslider" :key="slide">
         <div class="carousel__item">
-            <img class="imageSlider" :src="slide.name" />
+            <div class="imageSlider">
+              <img :src="slide.name" />
+            </div>
             <div class="desc">
                 <h5>Welcome To Pranayama</h5>
                 <h2>Join Yoga Studio</h2>
@@ -50,11 +52,12 @@ export default {
 <style scoped>
 .carousel__viewport {
   overflow: hidden;
-  height: 100vh;
+  height: 500px;
+  width: auto;
+  max-width: inherit;
 }
-img.imageSlider {
-    width: 100%;
-    object-fit: cover;
+.imageSlider {
+  width: 100%;
 }
 .carousel__slide{
     width: 100% !important;
@@ -105,5 +108,11 @@ img.imageSlider {
 }
 .carousel__pagination{
     display: none;
+}
+@media (max-width: 768px) {
+  img.imageSlider{
+    width: auto;
+    max-width: inherit;
+  }
 }
 </style>

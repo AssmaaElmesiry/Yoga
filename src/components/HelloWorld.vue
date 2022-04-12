@@ -1,5 +1,5 @@
 <template>
-    <Slide right>
+    <Slide right class="MenuRight">
       <div class="logo">
         <fa icon="dharmachakra" />
         <h2>Logo</h2>
@@ -66,7 +66,7 @@ body{
     position: fixed;
     width: 20px;
     height: 12px;
-    top: 45px;
+    top: 42px;
     left: auto !important;
     cursor: pointer;
   }
@@ -172,5 +172,10 @@ body{
     margin-left: 10px;
     font-weight: 700;
     color: #000;
+  }
+  @media(max-width: 767px){
+    .MenuRight{
+      display: none;
+    }
   }
 </style>

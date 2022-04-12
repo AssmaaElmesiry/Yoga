@@ -9,8 +9,8 @@
     </div>
     <section class="prodcts">
         <div class="container">
-            <div class="mask">
-                <div v-for="product in products" :key="product"  class="col-md-4 item">
+            <div class="mask row">
+                <div v-for="product in products" :key="product"  class="col-lg-4 col-md-6 col-sm-12 item">
                     <div class="bg-icon">
                         <fa icon="bahai" />
                     </div>
@@ -120,6 +120,7 @@ export default {
         align-items: center;
         border-radius: 10px;
         padding: 25px;
+        margin-bottom: 15px;
         position: relative;
     }
     .prodcts .mask .item .bg-icon{
@@ -143,15 +144,16 @@ export default {
         justify-content: center;
         align-content: center;
     }
-    .prodcts .mask .item:hover{
+    .prodcts .mask .item:hover, .prodcts .mask .item:nth-child(2){
         background-color: #7b6cd5;
         color: #fff;
         transition: all .5s ease-in-out
     }
-    .prodcts .mask .item:hover p {
+    
+    .prodcts .mask .item:hover p ,.prodcts .mask .item:nth-child(2) p{
         color: #fff;
     }
-    .prodcts .mask .item:hover .bg-icon{
+    .prodcts .mask .item:hover .bg-icon, .prodcts .mask .item:nth-child(2) .bg-icon{
         opacity: 1;
         display: flex;
         position: absolute;
@@ -162,7 +164,7 @@ export default {
         opacity: .1;
         margin-left: 0;
     }
-    .prodcts .mask .item:hover .bg-icon svg{
+    .prodcts .mask .item:hover .bg-icon svg, .prodcts .mask .item:nth-child(2) .bg-icon svg{
         color: #fff;
     }
 
