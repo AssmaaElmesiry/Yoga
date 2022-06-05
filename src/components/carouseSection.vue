@@ -1,5 +1,5 @@
 <template>
-  <Carousel :autoplay="2000" :wrap-around="true">
+  <Carousel :autoplay="90000" :wrap-around="true">
     <Slide v-for="slide in imgslider" :key="slide">
         <div class="carousel__item">
             <div class="imageSlider">
@@ -41,8 +41,6 @@ export default {
     return {
       imgslider:[
         {id:1, name:('./src/assets/home.jpg')},
-        {id:2, name:('./src/assets/home2.jpg')},
-        {id:3, name:('./src/assets/home3.jpg')},
       ]
     }
   },
@@ -57,11 +55,14 @@ export default {
   max-width: inherit;
 }
 .imageSlider {
-  width: 100%;
+  /* width: 100%; */
+}
+.imageSlider img{
+      width: 100%;
+    height: 100%;
 }
 .carousel__slide{
-    width: 100% !important;
-    order: 2;
+    width: 100%;
 }
 .carousel__item {
   min-height: 200px;
