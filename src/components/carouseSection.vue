@@ -33,7 +33,8 @@ export default {
 
 <style scoped>
 .main{
-  background-image: url("/assets/home3.png");
+  background-image: url("../assets/home3.png");
+  /* background-image: url("/assets/home3.png"); */
   height: 100vh;
   background-size: cover;
   background-attachment: fixed;
