@@ -39,32 +39,32 @@ export default {
                 {
                     title: 'Heal your emotions',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et. ',
-                    icon: ['src/assets/9.svg'],
+                    icon: ['../assets/9.svg'],
                 },
                 {
                     title: 'Body & Spirituality',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et. ',
-                    icon: 'src/assets/7.svg',
+                    icon: '../assets/7.svg',
                 },
                 {
                     title: 'Refreshens your body',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et. ',
-                    icon: 'src/assets/3.svg',
+                    icon: '../assets/3.svg',
                 },
                 {
                     title: 'Enjoy your life',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et. ',
-                    icon: 'src/assets/4.svg',
+                    icon: '../assets/4.svg',
                 },
                 {
                     title: 'Balance Body & Mind',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et. ',
-                    icon: 'src/assets/5.svg',
+                    icon: '../assets/5.svg',
                 },
                 {
                     title: 'Mind & Serenity',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et. ',
-                    icon: 'src/assets/8.svg',
+                    icon: '../assets/8.svg',
                 },
             ]
         }
