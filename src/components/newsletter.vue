@@ -8,9 +8,9 @@
                         <p>Get started with Pranayama, Start working together Easily</p>
                     </div>
                     <div class="col-md-7 right">
-                        <form>
+                        <form class="sm:flex-row flex-col">
                             <input type="EMail" name="Email" id="Email" placeholder="Enter your email" required>
-                            <button2 />
+                            <button1 />
                         </form>
                     </div>
                 </div>
@@ -19,10 +19,10 @@
     </section>
 </template>
 <script>
-import button2 from '../components/buttonStyle/button2.vue'
+import button1 from '../components/buttonStyle/button1.vue'
 export default {
     components: {
-        button2
+        button1
     }
 }
 </script>
@@ -31,7 +31,7 @@ export default {
         background-color: #f7f6f6
     }
     .newsletter .item{
-        background: #7b6cd5;
+        background: #c5bfe9;
         padding: 30px 40px;
         border-radius: 7px;
         position: relative;

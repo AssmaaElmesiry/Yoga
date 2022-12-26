@@ -10,7 +10,7 @@
     <section class="prodcts">
         <div class="container">
             <div class="mask row">
-                <div v-for="product in products" :key="product"  class="col-lg-4 col-md-6 col-sm-12 item">
+                <div v-for="product in products" :key="product"  class="col-lg-3 col-md-6 col-sm-12 item">
                     <div class="bg-icon">
                         <fa icon="bahai" />
                     </div>
@@ -112,6 +112,7 @@ export default {
     }
     .prodcts .mask{
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
     }
     .prodcts .mask .item{
@@ -119,8 +120,9 @@ export default {
         flex-direction: column;
         align-items: center;
         border-radius: 10px;
-        padding: 25px;
-        margin-bottom: 15px;
+        padding: 5px;
+        /* margin-bottom: 15px; */
+        margin: 15px;
         position: relative;
     }
     .prodcts .mask .item .bg-icon{

@@ -33,10 +33,10 @@
                     <section>
                         <img :src="Event2" />
                         <div class="details">
-                            <h4>Yoga For Healthy Living</h4>
+                            <h4>Hatha Yoga Training Festival</h4>
                             <ul class="event">
                             <li>
-                                <fa icon="clock-eight" />
+                                <fa icon="clock" />
                                 8:00 am 3:00 pm 
                             </li>
                             <li>
@@ -119,6 +119,7 @@ export default {
 .Events .main section .details .event{
     padding-left: 0 !important;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 63%;
     padding: 10px 0;

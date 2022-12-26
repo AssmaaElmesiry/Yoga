@@ -1,92 +1,11 @@
 <template>
   <div class="bg-gray-100">
-    <nav class=" container px-6 py-8 mx-auto md:flex w-991:justify-between w-991:items-center">
+    <nav class="  px-6 py-8 mx-auto md:flex w-991:justify-between w-991:items-center">
       <div class="flex items-center justify-between">
-        <router-link to="/" class=" text-xl font-bold text-gray-800 w-991:text-2xl hover:text-blue-400"> <fa icon="dharmachakra" />Logo
+        <router-link to="/" class=" flex items-center text-xl font-bold text-gray-800 w-991:text-2xl hover:text-blue-400"> <fa icon="dharmachakra" class="text-4xl pr-4" />Logo
         </router-link>
-        <!-- Mobile menu button -->
-        <div @click="showMenu = !showMenu" class="flex w-991px:hidden">
-          <button
-            type="button"
-            class="
-              text-gray-800
-              hover:text-gray-400
-              focus:outline-none focus:text-gray-400
-            "
-            >
-            <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
-              <path
-                fill-rule="evenodd"
-                d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
-              ></path>
-            </svg>
-          </button>
-          </div>
       </div>
-      <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
-      <ul
-        :class="showMenu ? 'flex' : 'hidden'"
-        class="
-          flex-col
-          mt-8
-          space-y-4
-          md:flex
-          md:space-y-0
-          md:flex-row
-          md:items-center
-          md:space-x-10
-          md:mt-0
-        ">
-        <li class="text-sm font-bold text-gray-800 hover:text-blue-400">
-          <b-dropdown  href="#" text="Home"> 
-            <b-dropdown-item><a href="#">First Action</a></b-dropdown-item>
-            <b-dropdown-item><a href="#">First Action</a></b-dropdown-item>
-            <b-dropdown-item><a href="#">First Action</a></b-dropdown-item>
-          </b-dropdown>
-        </li>
-     <li>
-       <button @click="dropIt">Pet Options</button>
-          <div id="myDropdown" class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-          </div>
-      </li>
-        <li class="text-sm font-bold text-gray-800 hover:text-blue-400">
-          <b-dropdown  href="#" text="Classes"> 
-            <b-dropdown-item><a href="#">First Action</a></b-dropdown-item>
-            <b-dropdown-item><a href="#">First Action</a></b-dropdown-item>
-            <b-dropdown-item><a href="#">First Action</a></b-dropdown-item>
-          </b-dropdown>
-        </li>
-        <li class="text-sm font-bold text-gray-800 hover:text-blue-400">
-          <b-dropdown  href="#" text="Trainer"> 
-            <b-dropdown-item><a href="#">First Action</a></b-dropdown-item>
-            <b-dropdown-item><a href="#">First Action</a></b-dropdown-item>
-            <b-dropdown-item><a href="#">First Action</a></b-dropdown-item>
-          </b-dropdown>
-        </li>
-        <li class="text-sm font-bold text-gray-800 hover:text-blue-400">
-          <b-dropdown  href="#" text="Events"> 
-            <b-dropdown-item><a href="#">First Action</a></b-dropdown-item>
-            <b-dropdown-item><a href="#">First Action</a></b-dropdown-item>
-            <b-dropdown-item><a href="#">First Action</a></b-dropdown-item>
-          </b-dropdown>
-        </li>
-        <li class="text-sm font-bold text-gray-800 hover:text-blue-400">
-          <b-dropdown  href="#" text="Blog"> 
-            <b-dropdown-item><a href="#">First Action</a></b-dropdown-item>
-            <b-dropdown-item><a href="#">First Action</a></b-dropdown-item>
-            <b-dropdown-item><a href="#">First Action</a></b-dropdown-item>
-          </b-dropdown>
-        </li>        
-        <li class="text-sm font-bold text-gray-800 hover:text-blue-400">
-          <a href="#">Contact Us </a>
-        </li>
-        <li>
-          <HelloWorld />
-        </li>
-      </ul>
+      <HelloWorld />
     </nav>
   </div>
 </template>

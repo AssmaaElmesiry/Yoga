@@ -6,20 +6,21 @@
                     <div class="col-lg-3 col-sm-6 col-12">
                         <h2> <fa icon="dharmachakra"/>Pranayama</h2>
                         <ul class="info">
-                            <li v-for="item in info">{{item}}</li>
+                            <li v-for="item in info" :key="item">{{item}}</li>
+                            <ul class="social">
+                                <li> <fa icon="link" /></li>
+                                <li> <fa icon="laptop" /> </li>
+                                <li> <fa icon="brain" /> </li>
+                                <li> <fa icon="calendar" /> </li>
+                                <li> <fa icon="hashtag" /> </li>
+                            </ul>
                         </ul>
-                        <ul class="social">
-                            <li> <fa icon="link" /></li>
-                            <li> <fa icon="link" /></li>
-                            <li> <fa icon="link" /></li>
-                            <li> <fa icon="link" /></li>
-                            <li> <fa icon="link" /></li>
-                        </ul>
+
                     </div>
                     <div class="col-lg-3 col-sm-6 col-12">
                         <h2>Company</h2>
                         <ul class="list">
-                            <li v-for="item in Company">
+                            <li v-for="item in Company" :key="item">
                                 <a href="#"><fa icon="chevron-right"/>{{item}}</a>
                             </li>
                         </ul>
@@ -27,7 +28,7 @@
                     <div class="col-lg-3 col-sm-6 col-12">
                         <h2>Company</h2>
                         <ul class="list">
-                            <li v-for="item in Menu">
+                            <li v-for="item in Menu" :key="item">
                                 <a href="#"><fa icon="chevron-right"/>{{item}}</a>
                             </li>
                         </ul>
@@ -35,7 +36,7 @@
                     <div class="col-lg-3 col-sm-6 col-12">
                         <h2>Company</h2>
                         <ul class="list">
-                            <li v-for="item in Support">
+                            <li v-for="item in Support" :key="item">
                                 <a href="#"><fa icon="chevron-right"/>{{item}}</a>
                             </li>
                         </ul>
@@ -101,7 +102,7 @@ export default {
     }
     .footer .social{
         display: flex;
-        width: 100%;
+        width: 70%;
         justify-content: space-between;
     }
     .footer .social li svg{
@@ -137,6 +138,9 @@ export default {
         font-size: 10px;
         transition: all .4s ease-in-out;
     }
+    .footer .info ,.footer .list {
+        padding-left: 1rem !important;
+    }
     .footer .downFooter{
         padding: 20px 0;
     }
@@ -147,5 +151,16 @@ export default {
     .footer .downFooter p span{
         color: #7b6cd5;
         font-weight: bold;
+    }
+    @media(max-width: 500px){
+        .footer .list{
+            padding-left: 50px !important;
+        }
+        .footer .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
 </style>

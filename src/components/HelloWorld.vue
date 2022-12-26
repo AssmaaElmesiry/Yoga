@@ -67,7 +67,8 @@ body{
     width: 20px;
     height: 12px;
     top: 42px;
-    left: auto !important;
+    left: auto;
+    right: 36px;
     cursor: pointer;
   }
   .bm-burger-bars {
@@ -174,8 +175,8 @@ body{
     color: #000;
   }
   @media(max-width: 767px){
-    .MenuRight{
+    /* .MenuRight{
       display: none;
-    }
+    } */
   }
 </style>
