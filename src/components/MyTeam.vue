@@ -41,7 +41,7 @@
                 </div> 
                 <div class="col-md-4 mask">
                     <div class="member-img">
-                        <img src="../assets/team3.jpg" />
+                        <img src="../assets/team3.png" />
                         <div class="item">
                             <div class="socialMedia">
                                 <fa icon="laptop" />

@@ -45,13 +45,13 @@ export default {
             items: [
                 { 
                     id: 1,
-                    img: ('../src/assets/test1.jpg'),
+                    img: ('../src/assets/test1.png'),
                     title: 'Elina Demir', 
                     desc: ' "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut." '
                 },
                 { 
                     id: 2,
-                    img: ('../src/assets/test2.jpg'),
+                    img: ('../src/assets/test2.png'),
                     title: 'Alexander Smith',
                     desc: ' "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut." '
                 },
