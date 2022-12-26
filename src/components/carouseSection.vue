@@ -26,9 +26,6 @@ export default {
     },
   data() {
     return {
-      imgslider:[
-        {id:1, name:('./src/assets/home.jpg')},
-      ]
     }
   },
 }
@@ -36,7 +33,7 @@ export default {
 
 <style scoped>
 .main{
-  background-image: url("../src/assets/home3.jpg");
+  background-image: url("src/assets/home3.png");
   height: 100vh;
   background-size: cover;
   background-attachment: fixed;
