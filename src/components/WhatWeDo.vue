@@ -37,32 +37,32 @@ export default {
                 {
                     title: 'Heal your emotions',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et. ',
-                    icon: '../../src/assets/1.png',
+                    icon: ['../../src/assets/1.png'],
                 },
                 {
                     title: 'Body & Spirituality',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et. ',
-                    icon: '../../src/assets/1.png',
+                    icon: ['../../src/assets/1.png'],
                 },
                 {
                     title: 'Refreshens your body',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et. ',
-                    icon: '../../src/assets/1.png',
+                    icon: ['../../src/assets/1.png'],
                 },
                 {
                     title: 'Enjoy your life',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et. ',
-                    icon: '../../src/assets/1.png',
+                    icon: ['../../src/assets/1.png'],
                 },
                 {
                     title: 'Balance Body & Mind',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et. ',
-                    icon: '../../src/assets/1.png',
+                    icon: ['../../src/assets/1.png'],
                 },
                 {
                     title: 'Mind & Serenity',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et. ',
-                    icon: '../../src/assets/1.png',
+                    icon: ['../../src/assets/1.png'],
                 },
             ]
         }
