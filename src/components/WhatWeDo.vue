@@ -15,7 +15,7 @@
                         <fa icon="bahai" />
                     </div>
                     <div class="logo">
-                        <img :src="product.icon" />
+                        <img :src="getImgUrl(product.icon)" />
                     </div>
                     <h4 class="title">
                         {{ product.title }}
@@ -37,36 +37,41 @@ export default {
                 {
                     title: 'Heal your emotions',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et. ',
-                    icon: ['../assets/1.png'],
+                    icon: "1.png",
                 },
                 {
                     title: 'Body & Spirituality',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et. ',
-                    icon: ['/src/assets/1.png'],
+                    icon: "1.png",
                 },
                 {
                     title: 'Refreshens your body',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et. ',
-                    icon: ['/assets/1.png'],
+                    icon: "1.png",
                 },
                 {
                     title: 'Enjoy your life',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et. ',
-                    icon: ['../../src/assets/1.png'],
+                    icon: "1.png",
                 },
                 {
                     title: 'Balance Body & Mind',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et. ',
-                    icon: ['../../src/assets/1.png'],
+                    icon: "1.png",
                 },
                 {
                     title: 'Mind & Serenity',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et. ',
-                    icon: ['../../src/assets/1.png'],
+                    icon: "1.png",
                 },
             ]
         }
     },
+    methods: {
+        getImgUrl: function (path) { 
+            return ('../assets/' + path);
+        }
+    }
 }
 </script>
 <style>
