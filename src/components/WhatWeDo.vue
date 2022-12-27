@@ -69,7 +69,7 @@ export default {
     },
     methods: {
         getImgUrl: function (path) { 
-            return ('../../src/assets/' + path);
+            return ('/src/assets/' + path);
         }
     }
 }
