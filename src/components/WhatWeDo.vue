@@ -47,7 +47,7 @@ export default {
                 {
                     title: 'Refreshens your body',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et. ',
-                    icon: '../assets/1.png',
+                    icon: '/assets/1.png',
                 },
                 {
                     title: 'Enjoy your life',
