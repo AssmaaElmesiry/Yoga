@@ -64,15 +64,15 @@ body{
   }
 .bm-burger-button {
     position: fixed;
-    width: 20px;
-    height: 12px;
+    width: 20px !important;
+    height: 12px !important;
     top: 42px;
-    left: auto;
+    left: auto !important;
     right: 36px;
     cursor: pointer;
   }
   .bm-burger-bars {
-    background-color: #373a47;
+    background-color: #373a47 !important;
   }
   .line-style {
     position: absolute;
@@ -88,12 +88,12 @@ body{
     cursor: pointer;
   }
   .bm-cross {
-    background: #7b6cd5;
+    background: #7b6cd5 !important;
   }
   .bm-cross-button {
     height: 30px;
     width: 30px;
-    border: 1px solid #7b6cd5;
+    border: 1px solid #7b6cd5 !important;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -106,7 +106,7 @@ body{
     z-index: 1000; 
     top: 0;
     left: -1px;
-    background-color: #fff;
+    background-color: #fff !important;
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
