@@ -12,9 +12,9 @@
                             </div>
                             <div class="avatar-info">
                                 {{item.desc}}
-                                <!-- <div class="rating">
+                                <div class="rating">
                                     <vue3-star-ratings v-model="rating" />
-                                </div> -->
+                                </div>
                             </div>
                         </div>
                     </Slide>
