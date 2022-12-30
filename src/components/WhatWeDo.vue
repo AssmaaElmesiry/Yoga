@@ -15,7 +15,9 @@
                         <fa icon="bahai" />
                     </div>
                     <div class="logo">
-                        <img :src="product.icon" />
+
+                        <img :src="`${imageUrl}${product.icon}.png`" />
+                        <!-- <img :src="product.icon" /> -->
                     </div>
                     <h4 class="title">
                         {{ product.title }}
@@ -37,41 +39,41 @@ export default {
                 {
                     title: 'Heal your emotions',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et. ',
-                    icon: ['../../src/assets/1.png'],
+                    icon: '1',
                 },
                 {
                     title: 'Body & Spirituality',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et. ',
-                    icon: ['../../src/assets/1.png'],
+                    icon: '1',
                 },
                 {
                     title: 'Refreshens your body',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et. ',
-                    icon: ['../../src/assets/1.png'],
+                    icon: '1',
                 },
                 {
                     title: 'Enjoy your life',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et. ',
-                    icon: ['../../src/assets/1.png'],
+                    icon: '1',
                 },
                 {
                     title: 'Balance Body & Mind',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et. ',
-                    icon: ['../../src/assets/1.png'],
+                    icon: '1',
                 },
                 {
                     title: 'Mind & Serenity',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et. ',
-                    icon: ['../../src/assets/1.png'],
+                    icon: '1',
                 },
             ]
         }
     },
-    // methods: {
-    //     getImgUrl: function (path) { 
-    //         return ('/src/assets/' + path);
-    //     }
-    // }
+    setup() {
+        
+        const imageUrl = new URL("../assets/", import.meta.url).href;
+        return { imageUrl };
+    },
 }
 </script>
 <style>
