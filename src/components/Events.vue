@@ -60,7 +60,7 @@ export default {
     data() {
         return {
             Event1: '../assets/Events1.png',
-            Event2: 'src/assets/Events2.png',
+            Event2: '../../src/assets/Events2.png',
         }
     },
     components: {
