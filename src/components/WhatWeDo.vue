@@ -15,7 +15,7 @@
                         <fa icon="bahai" />
                     </div>
                     <div class="logo">
-                        <img :src="`../../src/assets/${product.icon}.png`" />
+                        <img :src="`../assets/${product.icon}.png`" />
                         <!-- <img :src="`${imageUrl}${product.icon}.png`" /> -->
                         <!-- <img :src="product.icon" /> -->
                     </div>
