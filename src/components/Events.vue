@@ -11,7 +11,7 @@
             <div class="row">
                 <div class="col-md-6 main" >
                     <section>
-                        <img :src="Event1" />
+                        <img src="../assets/Events1.png" />
                         <div class="details">
                             <h4>Yoga For Healthy Living</h4>
                             <ul class="event">
@@ -31,7 +31,7 @@
                 </div>
                 <div class="col-md-6 main" >
                     <section>
-                        <img :src="Event2" />
+                        <img src="../assets/Events2.png" />
                         <div class="details">
                             <h4>Hatha Yoga Training Festival</h4>
                             <ul class="event">
