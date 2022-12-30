@@ -6,8 +6,7 @@
                     <Slide v-for="item in items" :key="item">
                         <div class="carousel__item">
                             <div class="avatar">
-                                <img :src="`${imageUrl}${item.img}.png`" />
-                                <!-- <img :src="item.img" /> -->
+                                <img :src="item.img" />
                                 <p>{{item.title}}</p>
                             </div>
                             <div class="avatar-info">
@@ -46,35 +45,31 @@ export default {
             items: [
                 { 
                     id: 1,
-                    img: 'test1',
+                    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI3vvVZ-pOGsyhaNEm9s-tm96lh7OGxJrpPQ&usqp=CAU',
                     title: 'Elina Demir', 
                     desc: ' "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut." '
                 },
                 { 
                     id: 2,
-                    img: 'test2',
+                    img: '../src/assets/test2.png',
                     title: 'Alexander Smith',
                     desc: ' "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut." '
                 },
                 { 
                     id: 1,
-                    img: 'test3',
+                    img: '../src/assets/test3.png',
                     title: 'Silvia Hatmun', 
                     desc: ' "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut." '
                 },
                 { 
                     id: 2,
-                    img: 'test4',
+                    img: '../src/assets/test4.png',
                     title: 'Egy Paulian',
                     desc: ' "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut." '
                 }
             ]
         }
     },    
-    setup() {
-        const imageUrl = new URL("../assets/", import.meta.url).href;
-        return { imageUrl };
-    },
 }
 </script>
 <style lang="css" >
