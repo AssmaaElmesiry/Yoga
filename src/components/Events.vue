@@ -59,7 +59,7 @@ import button1 from '../components/buttonStyle/button1.vue'
 export default {
     data() {
         return {
-            Event1: ['/src/assets/Events1.png'],
+            Event1: ['../assets/Events1.png'],
             Event2: ['/src/assets/Events2.png'],
         }
     },
