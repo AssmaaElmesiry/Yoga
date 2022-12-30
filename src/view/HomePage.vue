@@ -8,7 +8,7 @@
     <MyTeam />
     <OurPricing />
     <testimonials />
-    <Events />
+    <ArticlesVue />
     <contactUs />
     <newsletter />
     <footerstyle />
@@ -23,6 +23,7 @@ import classSchedule from '../components/classSchedule.vue';
 import MyTeam from '../components/MyTeam.vue';
 import OurPricing from '../components/OurPricing.vue';
 import testimonials from '../components/testimonials.vue';
+import ArticlesVue from "../components/Articles.vue";
 import contactUs from '../components/contactUs.vue';
 import newsletter from '../components/newsletter.vue';
 import footerstyle from '../components/footerstyle.vue';
@@ -45,6 +46,7 @@ export default {
       testimonials,
       contactUs,
       newsletter,
+      ArticlesVue,
       footerstyle,
     }
 };
