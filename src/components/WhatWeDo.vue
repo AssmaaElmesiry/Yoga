@@ -15,8 +15,8 @@
                         <fa icon="bahai" />
                     </div>
                     <div class="logo">
-
-                        <img :src="`${imageUrl}${product.icon}.png`" />
+                        <img :src="`../../src/assets/${product.icon}.png`" />
+                        <!-- <img :src="`${imageUrl}${product.icon}.png`" /> -->
                         <!-- <img :src="product.icon" /> -->
                     </div>
                     <h4 class="title">
