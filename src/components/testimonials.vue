@@ -45,25 +45,25 @@ export default {
             items: [
                 { 
                     id: 1,
-                    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI3vvVZ-pOGsyhaNEm9s-tm96lh7OGxJrpPQ&usqp=CAU',
-                    title: 'Elina Demir', 
+                    img: 'https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80',
+                    title: 'Aly Demir', 
                     desc: ' "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut." '
                 },
                 { 
                     id: 2,
-                    img: '../src/assets/test2.png',
+                    img: 'https://images.unsplash.com/photo-1585402627084-e80d83061b76?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60',
                     title: 'Alexander Smith',
                     desc: ' "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut." '
                 },
                 { 
                     id: 1,
-                    img: '../src/assets/test3.png',
+                    img: 'https://images.unsplash.com/photo-1597248374161-426f0d6d2fc9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
                     title: 'Silvia Hatmun', 
                     desc: ' "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut." '
                 },
                 { 
                     id: 2,
-                    img: '../src/assets/test4.png',
+                    img: 'https://images.unsplash.com/photo-1597223557154-721c1cecc4b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8d29tYW4lMjBmYWNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
                     title: 'Egy Paulian',
                     desc: ' "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut." '
                 }
@@ -90,6 +90,8 @@ export default {
 }
 .testimonials .avatar-box .carousel__item .avatar img{
     border-radius: 50%;
+    width: 100px;
+    height: 100px;
     border: 3px solid #444343;
 }
 .testimonials .avatar-box .carousel__item .avatar p{
