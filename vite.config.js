@@ -5,10 +5,13 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
     plugins: [vue()],
     server: {
-        origin: 'http://localhost:3000/frontend/',
+        origin: 'http://localhost:3000/frontend',
         host: '0.0.0.0',
         fs: {
             strict: true,
         }
     },
+    build: {
+        chunkSizeWarningLimit: 1600,
+      },
 })

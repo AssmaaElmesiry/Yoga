@@ -39,41 +39,41 @@ export default {
                 {
                     title: 'Heal your emotions',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et. ',
-                    icon: '../assets/1.png',
+                    icon: '../../src/assets/1.png',
                 },
                 {
                     title: 'Body & Spirituality',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et. ',
-                    icon: '../../src/assets/1.png',
+                    icon: '../../src/assets/2.png',
                 },
                 {
                     title: 'Refreshens your body',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et. ',
-                    icon: '../assets/1.png',
+                    icon: '../../src/assets/3.png',
                 },
                 {
                     title: 'Enjoy your life',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et. ',
-                    icon: '../assets/1.png',
+                    icon: '../../src/assets/4.png',
                 },
                 {
                     title: 'Balance Body & Mind',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et. ',
-                    icon: '../assets/1.png',
+                    icon: '../../src/assets/5.png',
                 },
                 {
                     title: 'Mind & Serenity',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et. ',
-                    icon: '../assets/1.png',
+                    icon: '../../src/assets/6.png',
                 },
             ]
         }
     },
-    setup() {
+    // setup() {
         
-        const imageUrl = new URL("../../src/assets/", import.meta.url).href;
-        return { imageUrl };
-    },
+    //     const imageUrl = new URL("../../src/assets/", import.meta.url).href;
+    //     return { imageUrl };
+    // },
 }
 </script>
 <style>

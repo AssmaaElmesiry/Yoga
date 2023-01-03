@@ -19,12 +19,14 @@
     </section>
 </template>
 <script>
-import button1 from '../components/buttonStyle/button1.vue'
+
 export default {
     components: {
         button1
     }
+
 }
+import button1 from '../components/buttonStyle/button1.vue'
 </script>
 <style lang="css">
     .newsletter{
