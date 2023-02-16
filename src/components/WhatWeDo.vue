@@ -33,6 +33,11 @@
 </template>
 <script>
 import icon1 from '../assets/1.png'
+import icon2 from '../assets/2.png'
+import icon3 from '../assets/3.png'
+import icon4 from '../assets/4.png'
+import icon5 from '../assets/5.png'
+import icon6 from '../assets/6.png'
 export default {
     
     data() {
@@ -46,27 +51,27 @@ export default {
                 {
                     title: 'Body & Spirituality',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et. ',
-                    icon: '../../src/assets/2.png',
+                    icon: icon2,
                 },
                 {
                     title: 'Refreshens your body',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et. ',
-                    icon: '../../src/assets/3.png',
+                    icon: icon3,
                 },
                 {
                     title: 'Enjoy your life',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et. ',
-                    icon: '../../src/assets/4.png',
+                    icon: icon4,
                 },
                 {
                     title: 'Balance Body & Mind',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et. ',
-                    icon: '../../src/assets/5.png',
+                    icon: icon5,
                 },
                 {
                     title: 'Mind & Serenity',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et. ',
-                    icon: '../../src/assets/6.png',
+                    icon: icon6,
                 },
             ]
         }
