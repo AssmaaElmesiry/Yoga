@@ -32,14 +32,16 @@
 </div>
 </template>
 <script>
+import icon1 from '../assets/1.png'
 export default {
+    
     data() {
         return {
             products: [
                 {
                     title: 'Heal your emotions',
                     details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et. ',
-                    icon: '../../src/assets/1.png',
+                    icon: icon1,
                 },
                 {
                     title: 'Body & Spirituality',
