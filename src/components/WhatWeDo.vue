@@ -144,6 +144,38 @@ export default {
         background-color: #7b6cd5;
         padding: 10px;
         border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        -webkit-transition: all .2s cubic-bezier(.47, 0, .745, .715);
+        transition: all .2s cubic-bezier(.47, 0, .745, .715);
+        -webkit-animation: pulse 2s infinite cubic-bezier(.66, 0, 0, 1);
+        animation: pulse 2s infinite cubic-bezier(.66, 0, 0, 1);
+        -webkit-box-shadow: 0 0 0 0 rgb(123 108 213 / 60%);
+        box-shadow: 0 0 0 0 rgb(123 108 213 / 60%);
+    }
+
+@-webkit-keyframes pulse
+{
+    to
+    {
+        -webkit-box-shadow: 0 0 0 9px rgba(123, 108, 213, 0);
+        box-shadow: 0 0 0 9px rgba(123, 108, 213, 0);
+    }
+}
+@keyframes pulse
+{
+    to
+    {
+        -webkit-box-shadow: 0 0 0 9px rgba(123, 108, 213, 0);
+        box-shadow: 0 0 0 9px rgba(123, 108, 213, 0);
+    }
+}
+    .prodcts .mask .item .logo img{
+        width: 95%;
+        height: auto;
     }
     .prodcts .mask .item .title{
         padding-top: 10px
