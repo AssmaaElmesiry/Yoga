@@ -25,7 +25,7 @@
                                 </li>
                             </ul>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et... </p>
-                            <a href="#">Continue Reading</a>
+                            <router-link to="/eventdetails">Continue Reading</router-link>
                         </div>
                     </section>
                 </div>
@@ -45,7 +45,7 @@
                             </li>
                             </ul>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et... </p>
-                            <a href="#">Continue Reading</a>
+                            <router-link to="/eventdetails">Continue Reading</router-link>
                         </div>
                     </section>
                 </div>
