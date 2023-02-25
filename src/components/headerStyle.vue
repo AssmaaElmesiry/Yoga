@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-gray-100">
-    <nav class="  px-6 py-8 mx-auto md:flex w-991:justify-between w-991:items-center">
+  <div class="bg-gray-100 shadow-sm">
+    <nav class="px-6 py-8 mx-auto md:flex w-991:justify-between w-991:items-center">
       <div class="flex items-center justify-between">
         <router-link to="/" class=" flex items-center text-xl font-bold text-gray-800 w-991:text-2xl hover:text-blue-400"> <fa icon="dharmachakra" class="text-4xl pr-4" />Logo
         </router-link>
