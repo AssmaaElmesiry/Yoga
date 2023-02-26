@@ -1,6 +1,6 @@
 <template>
     <div class="mask">
-        <button class="more">{{button}}</button>
+        <button class="more"><slot>{{button}}</slot></button>
     </div>
 </template>
 <script>

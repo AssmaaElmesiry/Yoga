@@ -10,37 +10,125 @@
             </span>
         </div>
         
-        <main class="flex container mt-20">
-            <section>
+        <main class="grid grid-flow-row-dense grid-cols-3 gap-4 container my-20">
+            <section class="col-span-2 bg-bg-event text-P-color">
                 <img src="../assets/Events1.png"  class="w-full"/>
-                    <div class="details">
-                        <h4>Yoga For Healthy Living</h4>
-                        <ul class="event">
-                            <li>
-                                <fa icon="clock" />
-                                8:00 am 3:00 pm 
-                            </li>
-                            <li>
-                                <fa icon="location-dot" />
-                                New York City
-                            </li>
-                        </ul>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et... </p>
-                        <router-link to="/eventdetails">Continue Reading</router-link>
+                <div class="details px-3 pt-3 ">
+                    <h4 class="text-black">Yoga For Healthy Living</h4>
+                    <ul class="flex p-0 mb-3">
+                        <li class="mr-7">
+                            <fa icon="clock" />
+                            8:00 am 3:00 pm 
+                        </li>
+                        <li>
+                            <fa icon="location-dot" />
+                            New York City
+                        </li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua. enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+                    <p>Excepteur sint ocacat cupidatat non proi dent sunt in culpa qui officia deserunt.mollit anim id est laborum. sed ut pers piciatis unde omnis iste natus error.sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                </div>
+                <div class="text-left px-5">
+                    <h3 class="text-p">03 Comments</h3>
+                    <div class="flex items-start relative mb-4">
+                        <img src="../assets/test4.png" class="w-1/12 h-1/12 rounded-full" />
+                        <div class="flex flex-col ml-2 ">
+                            <h4>Nihan Doe</h4>
+                            <span>22 Jan, 2020</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua. enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <a href="#" class="absolute right-0 text-main">
+                                <fa icon="reply" />
+                                replay
+                            </a>
+                        </div>
                     </div>
+                    <div class="flex items-start relative mb-4 ml-16">
+                        <img src="../assets/test4.png" class="w-1/12 h-1/12 rounded-full" />
+                        <div class="flex flex-col ml-2 ">
+                            <h4>Nihan Doe</h4>
+                            <span>22 Jan, 2020</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua. enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <a href="#" class="absolute right-0 text-main">
+                                <fa icon="reply" />
+                                replay
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex items-start relative mb-4">
+                        <img src="../assets/test4.png" class="w-1/12 h-1/12 rounded-full" />
+                        <div class="flex flex-col ml-2 ">
+                            <h4>Nihan Doe</h4>
+                            <span>22 Jan, 2020</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua. enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <a href="#" class="absolute right-0 text-main">
+                                <fa icon="reply" />
+                                replay
+                            </a>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="flex justify-between">
+                            <input placeholder="Name" type="text" class="input-style w-2/5"/>
+                            <input placeholder="E-mail" type="email" class="input-style w-2/5"/>
+                        </div>
+                        <textarea placeholder="Your Comment" class="input-style w-full h-36 resize-none"></textarea>
+                        <button1Vue class="ml-0">Add Comment</button1Vue>
+                    </form>
+                </div>
             </section>
-            <aside>dkfdjf</aside>
+            <aside class="">
+                <div class="w-full relative flex items-center">
+                    <input type="search" placeholder="Search" class="w-full rounded-2xl outline-none shadow-none border-1 border-solid border-main h-12 pl-3"/>
+                    <fa icon="magnifying-glass" class="absolute right-2"/>
+                </div>
+                <div class="mt-3 text-left p-4 shadow-xl rounded-2xl">
+                    <h3 class="text-p">
+                        Event Information
+                    </h3>
+                    <ul v-for="item in items" :key="item" class="pl-0">
+                        <li class="text-p mb-2 border-none border-b-2 border-gray-500">
+                            <span class="text-main font-bold">{{ item.name }}</span> :  {{ item.value }}
+                        </li>
+                    </ul>
+                </div>
+            </aside>
         </main>
+        <newsletterVue />
+        <footerstyleVue />
     </section>
   
 </template>
 
 <script>
+import button1Vue from './buttonStyle/button1.vue'
+import footerstyleVue from './footerstyle.vue'
 import headerStyleVue from './headerStyle.vue'
+import newsletterVue from './newsletter.vue'
 export default {
     components:{
         headerStyleVue,
-    }
+        button1Vue,
+        footerstyleVue,
+        newsletterVue,
+    },
+    data() {
+        return {
+            items:[
+                {
+                    name: "Data",
+                    value: "18 Feb 2020",
+                },
+                {
+                    name: "Time",
+                    value: "8:00 am 3:00 pm",
+                },
+                {
+                    name: "Location",
+                    value: "New York City",
+                }
+            ]
+        }
+    },
 }
 </script>
 
@@ -69,9 +157,17 @@ export default {
     }
     .details{
         position: relative;
-        padding: 20px 10px 20px 100px;
         text-align: justify;
-        border: 1px solid #eee;
-        background-color: #eeeeee61;
+    }
+    .input-style{
+        color: #666;
+        outline: none;
+        box-shadow: none;
+        border-radius: 0;
+        height: 60px;
+        padding: 12px;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #bcb4ef;
     }
 </style>
