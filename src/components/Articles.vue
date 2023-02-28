@@ -15,7 +15,7 @@
                         <div class="details">
                             <h4>Relax Your Body</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et... </p>
-                            <a href="#">Continue Reading</a>
+                            <router-link to="/eventdetails">Continue Reading</router-link>
                         </div>
                     </section>
                 </div>
@@ -25,7 +25,7 @@
                         <div class="details">
                             <h4>Yoga For Children</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et... </p>
-                            <a href="#">Continue Reading</a>
+                            <router-link to="/eventdetails">Continue Reading</router-link>
                         </div>
                     </section>
                 </div>

@@ -10,8 +10,8 @@
             </span>
         </div>
         
-        <main class="grid grid-flow-row-dense grid-cols-3 gap-4 container my-20">
-            <section class="col-span-2 bg-bg-event text-P-color">
+        <main class="grid grid-flow-row-dense lg:grid-cols-3 grid-col2 gap-4 container my-20">
+            <section class="lg:col-span-2 col-span-1 bg-bg-event text-P-color">
                 <img src="../assets/Events1.png"  class="w-full"/>
                 <div class="details px-3 pt-3 ">
                     <h4 class="text-black">Yoga For Healthy Living</h4>
@@ -42,7 +42,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="flex items-start relative mb-4 ml-16">
+                    <div class="flex items-start relative mb-4 ml-4">
                         <img src="../assets/test4.png" class="w-1/12 h-1/12 rounded-full" />
                         <div class="flex flex-col ml-2 ">
                             <h4>Nihan Doe</h4>
@@ -91,6 +91,35 @@
                         </li>
                     </ul>
                 </div>
+                <button1Vue class="w-full flex justify-center">Register Now</button1Vue>
+                <div class="mt-3 text-left p-4 shadow-xl rounded-2xl">
+                    <h3 class="text-p">
+                        Featured Events
+                    </h3>
+                    <div>
+                        <ul class="p-0">
+                            <a href="#" v-for="event in events" :key="event" class="flex items-start mb-2">
+                                <div class="w-24"><img :src="event.img" class="w-full" /></div>
+                                <div class="flex-col ml-2">
+                                    <h5 class="text-base text-P-color font-bold m-0">{{ event.title }}</h5>
+                                    <p class="text-xs text-P-color font-bold">{{ event.date }}</p>
+                                </div>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-3 text-left p-4 shadow-xl rounded-2xl">
+                    <h3 class="text-p">
+                        Tags
+                    </h3>
+                    <ul class="pl-0 flex flex-wrap">
+                        <li class="" v-for="tag in tags" :key="tag" >
+                            <a href="#" class="text-p  mb-1 mr-2">
+                                {{ tag.item }}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </aside>
         </main>
         <newsletterVue />
@@ -104,6 +133,9 @@ import button1Vue from './buttonStyle/button1.vue'
 import footerstyleVue from './footerstyle.vue'
 import headerStyleVue from './headerStyle.vue'
 import newsletterVue from './newsletter.vue'
+import img1 from "../assets/Events1.png"
+import img2 from "../assets/Articles2.png"
+import img3 from "../assets/Articles.png"
 export default {
     components:{
         headerStyleVue,
@@ -126,13 +158,40 @@ export default {
                     name: "Location",
                     value: "New York City",
                 }
+            ],
+            events:[
+                {
+                    id: "1",
+                    img: img1, 
+                    title: "Hatha Yoga Training Festival",
+                    date: "20 Feb 2020"
+                },
+                {
+                    id: "2",
+                    img: img2, 
+                    title: "Origins Of Meditation",
+                    date: "29 Feb 2020"
+                },
+                {
+                    id: "3",
+                    img: img3, 
+                    title: "Meditation Workshop",
+                    date: "25 dec 2020"
+                },
+            ],
+            tags:[
+                { item:"basic yoga" },
+                { item:"meditation"},
+                { item:"workshop"},
+                { item:"fitness"},
+                { item:"yoga tutorials"}
             ]
         }
     },
 }
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
     .banner{
         background-image: url("../../src/assets/banner.png");
         background-size: cover;
